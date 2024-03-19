@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "nameRu": "Карта ГУЛАГа в Прикамье",
+    "nameEn": "GULAG map in Prikamye",
+    "descriptionRu": "Интерактивная карта мест, связанных с советским террором и ГУЛАГом в Прикамье. Сделана по заказу Пермского отделения «Мемориала». Работы по проекту включали в себя перенос сайта на новый движок (Wordpress с ModX Evolution), редизайн, парсинг контента и реорганизацию сайта. И главное — создание многофункционального поиска с динамической подзагрузкой данных и реактивным интерфесом на основе обширной, но слабо организованной изначально базы данных. Проект выполнен на Vue.js и Mapbox GL на базе Wordpress с добавлением модулей на чистом PHP и Javascript. Моя роль в проекте — всё, кроме разработки дизайна.",
+    "descriptionEn": "Interactive map of GULAG-related spots in the Prikamye region (Permskiy kray) in Russia. Developed by the order of the Perm Branch of the International Memorial. The job included transfering the site to another engine (Wordpress instead of ModX Evolution, redesign, content parsing and site rearranging. The main goal of the project was to create a custom map and a multifunctional reactive search interface over a large but unorganized database. The tech stack consisted of Vue.js and Mapbox GL, Wordpress and several modiles of pure PHP and Javascript. I personaly handled all the development, except for the design.",
+    "link": "https://map.pmem-europa.de"
+  },
+  {
+    "id": 2,
+    "nameRu": "Телеграм-бот для фитнеса Fitbot",
+    "nameEn": "Fitbot, a telegram bot for fitness",
+    "descriptionRu": "Бот для отслеживания прогресса в занятиях фитнесом. Имеет общую базу данных упражнений с видео, доступную каждому пользователю, и индивидуальные расписания тренировок, которые можно составлять, редактировать и отмечать соблюдение. Сделан на Node.JS с использованием Telegram API и Mysql в качестве базы данных.",
+    "descriptionEn": "A telegram bot used for maintaining progress notes on physical activity. Has a common exercises database with video and individual workout schedules with CRUD interface. Developed with Node.JS and standard Telegram API with Mysql as a database.",
+    "link": "https://t.me/gymdailybot",
+    "github": "https://github.com/glebstrunnikov/fitbot"
+  }
+]

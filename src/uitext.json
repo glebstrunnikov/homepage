@@ -1,0 +1,35 @@
+{
+  "topLabel": {
+    "ru": "Страница Глеба Струнникова",
+    "en": "Gleb Strunnikov Homepage"
+  },
+  "homeBtn": {
+    "ru": "Обо мне",
+    "en": "About"
+  },
+  "articlesBtn": {
+    "ru": "Статьи",
+    "en": "Articles"
+  },
+  "projectsBtn": {
+    "ru": "Проекты",
+    "en": "Projects"
+  },
+  "aboutHeader": {
+    "ru": "Привет, я Глеб Струнников!",
+    "en": "Hi, I'm Gleb Strunnikov!"
+  },
+  "aboutText": {
+    "ru": "<p>Я веб-разработчик, делаю сайты, интерфейсы и ботов. Могу сделать и для вас, пишите!</p><p>Когда-то я был журналистом и редактором в России, но теперь живу в Болгарии. На этом сайте можно найти ссылки на мои IT-проекты и публикации в самых разных СМИ. Также внизу есть ссылки на мои соцсети, телеграм, гитхаб и резюме.</p>",
+
+    "en": "<p>I'm a web developer, I create sites, interfaces and bots. I might do one for you too, just shoot me a message!</p><p>Once I was a journalist in Russia, but now I live in Bulgaria. On this site you can find links to my IT projects and publications in various media outlets. Also below you can find my social media profiles, contacts, github and CV.</p>"
+  },
+  "articlesHeader": {
+    "ru": "Здесь собраны некоторые мои статьи, написанные в разное время для разных изданий. Принцип отбора – чистый волюнтаризм",
+    "en": "Here you can find some of my texts published in various media outlets over time. The selection principle is pure voluntarism"
+  },
+  "copyrightText": {
+    "ru": "<p class='my-1'>© Глеб Струнников</p><p class='my-1'>2023 – навсегда</p>",
+    "en": "<p class='my-1'>© Gleb Strunnikov</p><p class='my-1'>2023 - forever</p>"
+  }
+}
