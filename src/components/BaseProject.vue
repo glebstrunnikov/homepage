@@ -3,12 +3,10 @@
     <div class="container">
       <H4>{{ projectData.name }}</H4>
       <span class="m-1" v-if="props.link"
-        ><a href="{{props.link}}">{{
-          lang === "ru" ? "ссылка" : "link"
-        }}</a></span
+        ><a :href="props.link">{{ lang === "ru" ? "ссылка" : "link" }}</a></span
       >
       <span class="m-1" v-if="props.github"
-        ><a href="{{props.github}}">{{
+        ><a :href="props.github">{{
           lang === "ru" ? "страница на github" : "github page"
         }}</a></span
       >

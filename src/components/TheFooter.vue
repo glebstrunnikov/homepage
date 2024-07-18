@@ -11,8 +11,8 @@
         <a href="https://www.facebook.com/gleb.strunnikov/"><p>Facebook</p></a>
         <a href="https://twitter.com/glebstrunnikov"><p>Twitter</p></a>
         <a href="https://t.me/glebstrunnikov"><p>Telegram</p></a>
-        <a href="mailto:glebstrunnikov@gmail.com"><p>email</p></a>
-        <a href="/Strunnikov_webdev_cv.pdf"><p>CV (eng)</p></a>
+        <a href="mailto:glebstrunnikov@gmail.com"><p>Email</p></a>
+        <a :href="cvLink"><p>CV</p></a>
         <p></p>
       </div>
     </div>
@@ -26,10 +26,14 @@ import { useRoute } from "vue-router";
 const route = useRoute();
 const lang = ref();
 const copyrightText = ref();
+const cvLink = ref();
 watch(
   () => route.meta.lang,
   (newLang) => {
     lang.value = newLang;
+    newLang === "en"
+      ? (cvLink.value = "/Strunnikov_webdev_cv.pdf")
+      : (cvLink.value = "/Strunnikov_webdev_cv_ru.pdf");
     copyrightText.value = uitext.copyrightText[lang.value];
     document.querySelector("#copyright-text").innerHTML = copyrightText.value;
   }
