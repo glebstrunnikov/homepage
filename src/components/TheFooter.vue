@@ -40,15 +40,14 @@ watch(
 );
 </script>
 
-<style scoped>
-p {
-  margin-bottom: 0;
-  font-size: 90%;
-}
-a {
-  color: black;
-}
-a:hover {
-  color: rgb(75, 37, 37);
-}
+<style scoped lang="sass">
+a
+  color: black
+a:hover
+  color: rgb(75, 37, 37)
+p
+  margin-bottom: 0
+  font-size: 90%
 </style>
+/* p { margin-bottom: 0; font-size: 90%; } a { color: black; } a:hover { color:
+rgb(75, 37, 37); } */

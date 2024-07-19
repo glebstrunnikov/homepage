@@ -11,9 +11,33 @@
     "id": 2,
     "nameRu": "Телеграм-бот для фитнеса Fitbot",
     "nameEn": "Fitbot, a telegram bot for fitness",
-    "descriptionRu": "Бот для отслеживания прогресса в занятиях фитнесом. Имеет общую базу данных упражнений с видео, доступную каждому пользователю, и индивидуальные расписания тренировок, которые можно составлять, редактировать и отмечать соблюдение. Сделан на Node.JS с использованием Telegram API и Mysql в качестве базы данных.",
-    "descriptionEn": "A telegram bot used for maintaining progress notes on physical activity. Has a common exercises database with video and individual workout schedules with CRUD interface. Developed with Node.JS and standard Telegram API with Mysql as a database.",
+    "descriptionRu": "Бот для отслеживания прогресса в занятиях фитнесом. Имеет общую базу данных упражнений с видео, доступную каждому пользователю, и индивидуальные расписания тренировок, которые можно составлять, редактировать и отмечать соблюдение. Сделан на Node.JS с использованием Telegram API и MySQL в качестве базы данных.",
+    "descriptionEn": "A telegram bot used for maintaining progress notes on physical activity. Has a common exercises database with video and individual workout schedules with CRUD interface. Developed with Node.JS and standard Telegram API with MySQL as a database.",
     "link": "https://t.me/gymdailybot",
     "github": "https://github.com/glebstrunnikov/fitbot"
+  },
+  {
+    "id": 3,
+    "nameRu": "Мобильное приложение Fitbot",
+    "nameEn": "Fitbot, mobile app",
+    "descriptionRu": "Приложение для Android, использующее единую с ботом Fitbot базу данных. Собрано на Vue, Ionic и Capacitor. Пока немного слишком забаговано.",
+    "descriptionEn": "An Android app which uses the shared database with the Fitbot. Created with Vue, Ionic and Capacitor. Still too buggy yet.",
+    "github": "https://github.com/glebstrunnikov/fitapp"
+  },
+  {
+    "id": 4,
+    "nameRu": "Дедушке Вове пора на покой",
+    "nameEn": "Ilyich should go rest",
+    "descriptionRu": "Сайт общественной кампании по перезахоронению тела В. И. Ленина.",
+    "descriptionEn": "A site for the social campaign for re-burial of V. Lenin's body.",
+    "link": "https://t.me/leninsfuneral.ru"
+  },
+  {
+    "id": 3,
+    "nameRu": "Сайт аэропорта Верея",
+    "nameEn": "Vereya airport site",
+    "descriptionRu": "Сайт на вордпрессе с кастомным погодным виджетом и просмотром айпи-камер",
+    "descriptionEn": "Wordpress site with custom weather widget and camera viewer.",
+    "link": "https://vereya-air.ru/"
   }
 ]

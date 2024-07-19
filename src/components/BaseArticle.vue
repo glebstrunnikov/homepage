@@ -1,9 +1,9 @@
 <template>
   <div @click="redirect(url)" class="card p-0 overflow-hidden">
-    <div class="row">
+    <div class="card-wrapper">
       <div
         style="box-sizing: border-box; display: flex; justify-content: center"
-        class="col-4 overflow-hidden"
+        class="img-wrapper overflow-hidden"
       >
         <img
           class="d-none d-lg-block mw-100"
@@ -16,16 +16,32 @@
           alt="/pics/blank.jpg"
         />
       </div>
-      <div class="col-8">
+      <div class="text-wrapper">
         <h5 class="card-title pt-3">{{ cardData.name }}</h5>
         <a :href="url" class="fs-6">{{ cardData.url }}</a>
-        <p style="overflow: hidden" class="fs-6 mb-0">
+        <p class="text-content fs-6 mb-0">
           {{ cardData.lead }}
         </p>
       </div>
     </div>
   </div>
 </template>
+
+<style scoped lang="sass">
+.card-wrapper
+  display: flex
+.img-wrapper
+  flex: 1
+.text-wrapper
+  flex: 2
+  padding: 10px
+.text-content
+  text-overflow: ellipsis
+  overflow: hidden
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 5
+</style>
 
 <script setup>
 import { ref, onMounted, reactive } from "vue";
@@ -37,10 +53,10 @@ function redirect(url) {
 const cardData = reactive({
   name: props.nameRu,
   url: getDomain(props.url),
-  lead:
-    props.leadRu.length < 280
-      ? props.leadRu
-      : `${props.leadRu.slice(0, 280)}...`,
+  lead: props.leadRu,
+  // props.leadRu.length < 280
+  //   ? props.leadRu
+  //   : `${props.leadRu.slice(0, 280)}...`,
   img: props.img,
 });
 
@@ -104,4 +120,3 @@ img.image-medium {
   max-height: 13em;
 }
 </style>
->

@@ -10,7 +10,7 @@
           lang === "ru" ? "страница на github" : "github page"
         }}</a></span
       >
-      <div>{{ projectData.description }}</div>
+      <div class="project-description">{{ projectData.description }}</div>
     </div>
   </div>
 </template>
@@ -68,4 +68,14 @@ a {
 .card:hover {
   cursor: pointer;
 }
+</style>
+
+<style scoped lang="sass">
+.project-description
+  text-overflow: ellipsis
+  overflow: hidden
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 3
+  overflow: hidden
 </style>

@@ -18,7 +18,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 img {
   max-width: 15%;
   display: block;
