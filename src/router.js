@@ -20,22 +20,30 @@ const router = createRouter({
     { path: "/ru/projects", component: ProjectsPage, meta: { lang: "ru" } },
     { path: "/en/projects", component: ProjectsPage, meta: { lang: "en" } },
 
-    // {
-    //   path: "/ru/cv",
-    //   redirect: () => (window.location.href = "/strunnikov_webdev_cv_ru.pdf"),
-    // },
-    // {
-    //   path: "/en/cv",
-    //   redirect: () => (window.location.href = "/strunnikov_webdev_cv.pdf"),
-    // },
-    // {
-    //   path: "/Strunnikov_webdev_cv_ru.pdf",
-    //   redirect: () => (window.location.href = "/strunnikov_webdev_cv_ru.pdf"),
-    // },
-    // {
-    //   path: "/Strunnikov_webdev_cv",
-    //   redirect: () => (window.location.href = "/strunnikov_webdev_cv.pdf"),
-    // },
+    {
+      path: "/strunnikov_webdev_cv_ru.pdf",
+      beforeEnter() {
+        window.location.href = "/strunnikov_webdev_cv_ru.pdf";
+      },
+    },
+    {
+      path: "/strunnikov_webdev_cv.pdf",
+      beforeEnter() {
+        window.location.href = "/strunnikov_webdev_cv.pdf";
+      },
+    },
+    {
+      path: "/Strunnikov_webdev_cv_ru.pdf",
+      beforeEnter() {
+        window.location.href = "/strunnikov_webdev_cv_ru.pdf";
+      },
+    },
+    {
+      path: "/Strunnikov_webdev_cv.pdf",
+      beforeEnter() {
+        window.location.href = "/strunnikov_webdev_cv.pdf";
+      },
+    },
 
     { path: "/404", component: NotFound, meta: { lang: "ru" } },
 
@@ -47,10 +55,6 @@ router.beforeEach((to, from, next) => {
   if (to.path === "/ru/cv") {
     window.location.href = "/strunnikov_webdev_cv_ru.pdf";
   } else if (to.path === "/en/cv") {
-    window.location.href = "/strunnikov_webdev_cv.pdf";
-  } else if (to.path === "/Strunnikov_webdev_cv_ru.pdf") {
-    window.location.href = "/strunnikov_webdev_cv_ru.pdf";
-  } else if (to.path === "/Strunnikov_webdev_cv") {
     window.location.href = "/strunnikov_webdev_cv.pdf";
   } else {
     next();
