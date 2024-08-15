@@ -20,8 +20,22 @@ const router = createRouter({
     { path: "/ru/projects", component: ProjectsPage, meta: { lang: "ru" } },
     { path: "/en/projects", component: ProjectsPage, meta: { lang: "en" } },
 
-    { path: "/ru/resume", redirect: "/Strunnikov_webdev_cv_ru.pdf" },
-    { path: "/en/resume", redirect: "/Strunnikov_webdev_cv.pdf" },
+    {
+      path: "/ru/cv",
+      redirect: () => (window.location.href = "/strunnikov_webdev_cv_ru.pdf"),
+    },
+    {
+      path: "/en/cv",
+      redirect: () => (window.location.href = "/strunnikov_webdev_cv.pdf"),
+    },
+    {
+      path: "/Strunnikov_webdev_cv_ru.pdf",
+      redirect: () => (window.location.href = "/strunnikov_webdev_cv_ru.pdf"),
+    },
+    {
+      path: "/Strunnikov_webdev_cv",
+      redirect: () => (window.location.href = "/strunnikov_webdev_cv.pdf"),
+    },
 
     { path: "/404", component: NotFound, meta: { lang: "ru" } },
 
