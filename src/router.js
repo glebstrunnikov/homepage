@@ -20,45 +20,10 @@ const router = createRouter({
     { path: "/ru/projects", component: ProjectsPage, meta: { lang: "ru" } },
     { path: "/en/projects", component: ProjectsPage, meta: { lang: "en" } },
 
-    {
-      path: "/strunnikov_webdev_cv_ru.pdf",
-      beforeEnter() {
-        window.location.href = "/strunnikov_webdev_cv_ru.pdf";
-      },
-    },
-    {
-      path: "/strunnikov_webdev_cv.pdf",
-      beforeEnter() {
-        window.location.href = "/strunnikov_webdev_cv.pdf";
-      },
-    },
-    {
-      path: "/Strunnikov_webdev_cv_ru.pdf",
-      beforeEnter() {
-        window.location.href = "/strunnikov_webdev_cv_ru.pdf";
-      },
-    },
-    {
-      path: "/Strunnikov_webdev_cv.pdf",
-      beforeEnter() {
-        window.location.href = "/strunnikov_webdev_cv.pdf";
-      },
-    },
-
     { path: "/404", component: NotFound, meta: { lang: "ru" } },
 
     { path: "/:catchAll(.*)", redirect: "/404" },
   ],
-});
-
-router.beforeEach((to, from, next) => {
-  if (to.path === "/ru/cv") {
-    window.location.href = "/strunnikov_webdev_cv_ru.pdf";
-  } else if (to.path === "/en/cv") {
-    window.location.href = "/strunnikov_webdev_cv.pdf";
-  } else {
-    next();
-  }
 });
 
 export default router;
